@@ -2,7 +2,7 @@
 dd-wrt busybox script to push notifications when wireless clients associate/disconnect
 
 Most of the description is in the header for the script... so I just copied it here for now. Set a cron job on your DD-WRT router in order to kick off the script every minute. On the Administration tab, under Cron, add the following to the text box:
-* * * * * root /jffs/alertwifi.sh >/tmp/pushover.out 2>&1
+`* * * * * root /jffs/alertwifi.sh >/tmp/pushover.out 2>&1`
 
  This script was written for DD-WRT to send push notifications whenever wifi
   clients connect or disconnect. It sends a single push notification with
